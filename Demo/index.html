@@ -1,0 +1,296 @@
+<!--* FancyMe Alphabetical Tabs Plugin
+ * By Pamela Rodriguez
+ * Free to use
+ * Link backs are appreciated :)
+ * www.thepamrdz.com
+ *-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>FancyMe - Alphabetical menu</title>
+
+    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+
+    <link href="demo.styles.css" type="text/css" rel="stylesheet" />
+    <link href="../fancymealphabet.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="jquery.snippet.bright.css"/>
+    <script type="text/javascript" src="jquery-1.9.0.min.js"></script>
+    <script type="text/javascript" src="jquery.snippet.min.js"></script>
+    <script language="javascript" type="text/javascript" src="../fancymealphabet.JQuery.js"></script>
+    <script>
+        $(function() {
+            $('#alphabet01').fancymealphabet();
+            $('#alphabet02').fancymealphabet({theme: "pink", tabheight: "300px"});
+            $('#alphabet03').fancymealphabet({theme: "orange", tabheight: "300px", collength: "12"});
+            $("pre.htmlCode").snippet("html",{style:"bright"});
+            $("pre.jsCode").snippet("javascript",{style:"bright"});
+        });
+    </script>
+</head>
+
+<body>
+<div id="goback">
+    <a href="http://thepamrdz.com/plugins">By Pamela Rodriguez</a>
+</div>
+<div class='wrap'>
+    <p class="center"></p>
+    <h1>Example 1: Default settings</h1>
+<div id="alphabet01">
+    <span>Hugh Jackman</span>
+    <span>Jennifer Lawrence</span>
+    <span>Topher Grace</span>
+    <span>Joseph Gordon-Levitt</span>
+    <span>Anne Hathaway</span>
+    <span>Jessica Biel</span>
+    <span>Scarlet Johanson</span>
+    <span>Christian Bale</span>
+    <span>Helena Bonham-Carter</span>
+    <span>Robert Downey Jr.</span>
+    <span>Kate Beckinsale</span>
+    <span>Meryl Streep</span>
+    <span>Josh Hutcherson</span>
+    <span>Josh Duhamel</span>
+    <span>Jennifer Hudson</span>
+    <span>Jessica Biel</span>
+    <span>Jessica Alba</span>
+    <span>James Marsdsen</span>
+    <span>James Dean</span>
+    <span>Jamie Fox</span>
+    <span>Julia Roberts</span>
+    <span>Matthew Perry</span>
+    <span>Matt Le Blanc</span>
+    <span>Eva Mendez</span>
+    <span>Ryan Gosling</span>
+    <span>Courtney Cox</span>
+    <span>Jennifer Aniston</span>
+    <span>Leonardo DiCaprio</span>
+    <span>Mark Ruffalo</span>
+    <span>Edward Norton</span>
+    <span>Bradley Cooper</span>
+    <span>Brad Pitt</span>
+    <span>Zachary Quinto</span>
+    <span>Gwyneth Paltrow</span>
+    <span>Bruce Willis</span>
+    <span>John Malkovich</span>
+    <span>Helen Mirren</span>
+    <span>Tom Cruise</span>
+    <span>Demian Bichir</span>
+    <span>Zac Efron</span>
+    <span>Morgan Freeman</span>
+    <span>Denzel Washington</span>
+    <span>Michael Douglas</span>
+    <span>Will Smith</span>
+    <span>Zooey Deschannel</span>
+    <span>123skja</span>
+    <span>#kusak</span>
+    <span>Famke Yansen</span>
+    <span>Ian McKellen</span>
+    <span>Ian McShane</span>
+    <span>Natalie Portman</span>
+    <span>Nathan Fillion</span>
+    <span>Liam Neeson</span>
+    <span>Oscar Torre</span>
+    <span>Olivia Wilde</span>
+    <span>Peter Facinelli</span>
+    <span>Quvenzhane Wallis</span>
+    <span>Sandra Bullock</span>
+    <span>Keneth Branagh</span>
+</div>
+<p>In order to obtain the previous result (which is a tabbed navigation arranged in alphabetical order with the default settings) the structure needed is the following:</p>
+<pre class="htmlCode">
+&lt;div id="alphabet01"&gt;
+    &lt;span&gt;Hugh Jackman&lt;/span&gt;
+    &lt;span&gt;Jennifer Lawrence&lt;/span&gt;
+    &lt;span&gt;Topher Grace&lt;/span&gt;
+    &lt;span&gt;Joseph Gordon-Levitt&lt;/span&gt;
+    &lt;span&gt;Anne Hathaway&lt;/span&gt;
+    ...And some more...
+&lt;/div&gt;
+</pre>
+
+<p>All of the elements that need to be ordered enveloped in SPAN tags, all said tags inside a DIV, which will become the tab display. The imports needed at the top of the page:</p>
+
+<pre class="htmlCode">
+&lt;link href="fancymealphabet.css" type="text/css" rel="stylesheet" /&gt;
+&lt;script type="text/javascript" src="jquery-1.9.0.min.js"&gt;&lt;/script&gt;
+&lt;script language="javascript" type="text/javascript" src="fancymealphabet.JQuery.js"&gt;&lt;/script&gt;
+</pre>
+
+<p>And the JQuery instruction to call our plugin into action.</p>
+
+<pre class="jsCode">
+&lt;script&gt;
+    $(function() {
+        $('#alphabet').fancymealphabet();
+    });
+&lt;/script&gt;
+</pre>
+
+<p>This provides the result shown above.</p>
+
+<h1>Example 2: Color themes and tab height</h1>
+<div id="alphabet02">
+    <span>Hugh Jackman</span>
+    <span>Jennifer Lawrence</span>
+    <span>Topher Grace</span>
+    <span>Joseph Gordon-Levitt</span>
+    <span>Anne Hathaway</span>
+    <span>Jessica Biel</span>
+    <span>Scarlet Johanson</span>
+    <span>Christian Bale</span>
+    <span>Helena Bonham-Carter</span>
+    <span>Robert Downey Jr.</span>
+    <span>Kate Beckinsale</span>
+    <span>Meryl Streep</span>
+    <span>Josh Hutcherson</span>
+    <span>Josh Duhamel</span>
+    <span>Jennifer Hudson</span>
+    <span>Jessica Biel</span>
+    <span>Jessica Alba</span>
+    <span>James Marsdsen</span>
+    <span>James Dean</span>
+    <span>Jamie Fox</span>
+    <span>Julia Roberts</span>
+    <span>Matthew Perry</span>
+    <span>Matt Le Blanc</span>
+    <span>Eva Mendez</span>
+    <span>Ryan Gosling</span>
+    <span>Courtney Cox</span>
+    <span>Jennifer Aniston</span>
+    <span>Leonardo DiCaprio</span>
+    <span>Mark Ruffalo</span>
+    <span>Edward Norton</span>
+    <span>Bradley Cooper</span>
+    <span>Brad Pitt</span>
+    <span>Zachary Quinto</span>
+    <span>Gwyneth Paltrow</span>
+    <span>Bruce Willis</span>
+    <span>John Malkovich</span>
+    <span>Helen Mirren</span>
+    <span>Tom Cruise</span>
+    <span>Demian Bichir</span>
+    <span>Zac Efron</span>
+    <span>Morgan Freeman</span>
+    <span>Denzel Washington</span>
+    <span>Michael Douglas</span>
+    <span>Will Smith</span>
+    <span>Zooey Deschannel</span>
+    <span>123skja</span>
+    <span>#kusak</span>
+    <span>Famke Yansen</span>
+    <span>Ian McKellen</span>
+    <span>Ian McShane</span>
+    <span>Natalie Portman</span>
+    <span>Nathan Fillion</span>
+    <span>Liam Neeson</span>
+    <span>Oscar Torre</span>
+    <span>Olivia Wilde</span>
+    <span>Peter Facinelli</span>
+    <span>Quvenzhane Wallis</span>
+    <span>Sandra Bullock</span>
+    <span>Keneth Branagh</span>
+</div>
+
+<p>Changing the color theme with just one parameter in the function call is one of the advantages every FancyMe plugin has. The available themes are:</p>
+
+<ul>
+    <li>default (gray tones)</li>
+    <li>blue</li>
+    <li>red</li>
+    <li>pink</li>
+    <li>green</li>
+    <li>yellow</li>
+    <li>orange</li>
+    <li>purple</li>
+    <li>black</li>
+</ul>
+
+<p>In the following piece of code, the pink theme is being applied</p>
+
+<pre class="jsCode">
+&lt;script&gt;
+    $(function() {
+        $('#alphabet').fancymealphabet({theme: "pink", tabheight: "300px"});
+    });
+&lt;/script&gt;
+</pre>
+
+<p>The second variable applied is <strong>tabheight</strong>. Notice how in the first example, the height of the tab container varies according to the length of its content. If you want this to be a fixed height, just enter the value in pixels through a parameter in the function call, as shown. In this example, <strong>tabheight: "300px"</strong> changes the auto height to a fixed 300px height</p>
+
+<h1>Example 3: Fixing Column Length</h1>
+<div id="alphabet03">
+    <span>Hugh Jackman</span>
+    <span>Jennifer Lawrence</span>
+    <span>Topher Grace</span>
+    <span>Joseph Gordon-Levitt</span>
+    <span>Anne Hathaway</span>
+    <span>Jessica Biel</span>
+    <span>Scarlet Johanson</span>
+    <span>Christian Bale</span>
+    <span>Helena Bonham-Carter</span>
+    <span>Robert Downey Jr.</span>
+    <span>Kate Beckinsale</span>
+    <span>Meryl Streep</span>
+    <span>Josh Hutcherson</span>
+    <span>Josh Duhamel</span>
+    <span>Jennifer Hudson</span>
+    <span>Jessica Biel</span>
+    <span>Jessica Alba</span>
+    <span>James Marsdsen</span>
+    <span>James Dean</span>
+    <span>Jamie Fox</span>
+    <span>Julia Roberts</span>
+    <span>Matthew Perry</span>
+    <span>Matt Le Blanc</span>
+    <span>Eva Mendez</span>
+    <span>Ryan Gosling</span>
+    <span>Courtney Cox</span>
+    <span>Jennifer Aniston</span>
+    <span>Leonardo DiCaprio</span>
+    <span>Mark Ruffalo</span>
+    <span>Edward Norton</span>
+    <span>Bradley Cooper</span>
+    <span>Brad Pitt</span>
+    <span>Zachary Quinto</span>
+    <span>Gwyneth Paltrow</span>
+    <span>Bruce Willis</span>
+    <span>John Malkovich</span>
+    <span>Helen Mirren</span>
+    <span>Tom Cruise</span>
+    <span>Demian Bichir</span>
+    <span>Zac Efron</span>
+    <span>Morgan Freeman</span>
+    <span>Denzel Washington</span>
+    <span>Michael Douglas</span>
+    <span>Will Smith</span>
+    <span>Zooey Deschannel</span>
+    <span>123skja</span>
+    <span>#kusak</span>
+    <span>Famke Yansen</span>
+    <span>Ian McKellen</span>
+    <span>Ian McShane</span>
+    <span>Natalie Portman</span>
+    <span>Nathan Fillion</span>
+    <span>Liam Neeson</span>
+    <span>Oscar Torre</span>
+    <span>Olivia Wilde</span>
+    <span>Peter Facinelli</span>
+    <span>Quvenzhane Wallis</span>
+    <span>Sandra Bullock</span>
+    <span>Keneth Branagh</span>
+</div>
+
+<p>Since the plugin converts the list of items into alphabetically ordered lists, and these lists can be long, there is a parameter to break lists into smaller groups. The parameter is <strong>collength</strong>, and its default value is 15. This means that a list will only be 15 elements long before it breaks into a second list, floated to the right of the first one. In the example above, the parameter is changed to 12 (you may want to check the tab for letter "J" in this and the previous example to see the difference) through the following code:</p>
+
+<pre class="jsCode">
+&lt;script&gt;
+    $(function() {
+        $('#alphabet').fancymealphabet({theme: "orange", tabheight: "300px", collength: "12"});
+    });
+&lt;/script&gt;
+</pre>
+</div>
+</body>
+</html>

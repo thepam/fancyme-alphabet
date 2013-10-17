@@ -1,0 +1,70 @@
+/* FancyMe Accordion Plugin
+ * By Pamela Rodriguez
+ * Free to use
+ * Link backs are appreciated :)
+ * www.thepamrdz.com
+ */
+ 
+/*Demo CSS
+ * These styles are just for styling the demo, not necessary for the actual plugin*/
+
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	background-color: #f7f7f7;
+}
+
+body, div{
+	padding: 0;
+	list-style: none;
+	font-weight:100;
+}
+
+strong{
+	font-family: "Courier New", sans-serif;
+	background-color: #ddd;
+	font-weight: 100;
+	color: #666;
+}
+
+p.center{
+	background: url(logo.png) center center no-repeat;
+	height: 210px;
+	padding-top: 25px;
+}
+
+h1{
+	background-color: #ddd;
+	padding: 15px;
+	color: #555;
+}
+
+#goback{
+	position: absolute;
+	top: 0;
+	left: 10px;
+	width: auto;
+	display: inline-block;
+}
+
+#goback a{
+	display: block;
+	padding: 15px;
+	color: #666;
+	background-color: #ccc;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+#goback a:hover{
+	background-color: #999;
+	color: #fff;
+}
+
+@media only screen and (max-width: 480px) {
+	p.center{
+		background: url(logo_sm.png) center center no-repeat;
+		height: 140px;
+		margin-top: 40px;
+	}
+}

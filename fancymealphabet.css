@@ -1,0 +1,306 @@
+/* FancyMe Alphabet Plugin
+ * By Pamela Rodriguez
+ * Free to use
+ * Link backs are appreciated :)
+ * www.thepamrdz.com
+ */
+
+/*Plugin CSS - Basic Tab Styling (with Default theme)*/
+
+.fancyme-alphabet{
+	width: 100%;
+	height: auto;
+	display: block;
+	overflow: hidden;
+	clear:both;	
+}
+
+.fancyme-alphabet #tabnav{
+    padding: 3px 0;
+    margin-left: 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.fancyme-alphabet #tabnav li{
+    list-style: none;
+    margin: 0;
+    display: inline;
+}
+
+.fancyme-alphabet #tabnav li a{
+    padding: 3px 0.5em;
+    margin-left: 3px;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    background: #ccc;
+    color: #888;
+    text-decoration: none;
+}
+
+.fancyme-alphabet #tabnav li a:hover{
+    color: #000;
+    background: #fff;
+}
+
+.fancyme-alphabet #tabnav li.current a{
+    background: white;
+    border-bottom: 1px solid white;
+    color: #000;
+    font-weight: 900;
+}
+
+.fancyme-alphabet #tabcontainer{
+	clear: both;
+	display: block;	
+	height: auto;
+	overflow: hidden;	
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-top : 0;
+	margin-top: -14px;
+}
+
+.fancyme-alphabet #tabcontainer div{
+	padding: 20px;	
+}
+
+.fancyme-alphabet #tabcontainer div.tab{
+	display: none;	
+}
+
+.fancyme-alphabet #tabcontainer div.current{
+	display: block;	
+}
+
+.fancyme-alphabet #tabcontainer div ul{
+	width: 20%;
+	float: left;
+}
+
+/*Plugin CSS - Additional Themes Styling*/
+
+/*Blue Theme Styling*/
+
+.fancyme-alphabet.blue #tabnav{
+    border-bottom: 1px solid #374c85;
+}
+
+.fancyme-alphabet.blue #tabnav li a{
+	background-color: #374c85;
+	color: #bbb;
+	border: 1px solid #374c85;
+	border-bottom: 0;
+}
+
+.fancyme-alphabet.blue #tabnav li a:hover{
+	background-color: #fff;
+	color: #374c85;
+}
+
+.fancyme-alphabet.blue #tabnav li.current a{
+	background-color: #fff;
+	color: #374c85;
+	border-bottom: 1px solid white;
+}
+
+.fancyme-alphabet.blue #tabcontainer{
+	border: 1px solid #25325a;
+	border-top : 0;
+}
+
+/*Red Theme Styling*/
+.fancyme-alphabet.red #tabnav{
+    border-bottom: 1px solid #921307;
+}
+
+.fancyme-alphabet.red #tabnav li a{
+	background-color: #921307;	
+	color: #bbb;
+	border: 1px solid #921307;	
+	border-bottom:0;
+}
+
+.fancyme-alphabet.red #tabnav li a:hover{
+	background-color: #fff;
+	color: #921307;
+}
+
+.fancyme-alphabet.red #tabnav li.current a{
+	background-color: #fff;
+	color: #921307;
+	border-bottom: 1px solid white;
+}
+
+.fancyme-alphabet.red #tabcontainer{
+	border: 1px solid #921307;
+	border-top : 0;
+}
+
+/*Green Theme Styling*/
+.fancyme-alphabet.green #tabnav{
+    border-bottom: 1px solid #1c7f2c;
+}
+
+.fancyme-alphabet.green #tabnav li a{
+	background-color: #1c7f2c;	
+	color: #bbb;
+	border: 1px solid #1c7f2c;	
+	border-bottom: 0;
+}
+
+.fancyme-alphabet.green #tabnav li a:hover{
+	background-color: #fff;
+	color: #1c7f2c;
+}
+
+.fancyme-alphabet.green #tabnav li.current a{
+	background-color: #fff;
+	color: #1c7f2c;
+	border-bottom: 1px solid white;
+}
+
+.fancyme-alphabet.green #tabcontainer{
+	border: 1px solid #1c7f2c;
+	border-top : 0;
+}
+
+/*Yellow Theme Styling*/
+.fancyme-alphabet.yellow #tabnav{
+    border-bottom: 1px solid #ffbf00;
+}
+
+.fancyme-alphabet.yellow #tabnav li a{
+	background-color: #ffbf00;	
+	color: #999;
+	border: 1px solid #ffbf00;
+	border-bottom: 0;
+}
+
+.fancyme-alphabet.yellow #tabnav li a:hover{
+	background-color: #fff;
+	color: #ffbf00;
+}
+
+.fancyme-alphabet.yellow #tabnav li.current a{
+	background-color: #fff;
+	color: #ffbf00;
+	border-bottom: 1px solid white;
+}
+
+.fancyme-alphabet.yellow #tabcontainer{
+	border: 1px solid #ffbf00;
+	border-top : 0;
+}
+
+/*Orange Theme Styling*/
+.fancyme-alphabet.orange #tabnav{
+    border-bottom: 1px solid #d85200;
+}
+
+.fancyme-alphabet.orange #tabnav li a{
+	background-color: #d85200;	
+	color: #ddd;
+	border: 1px solid #d85200;	
+	border-bottom: 0;
+}
+
+.fancyme-alphabet.orange #tabnav li a:hover{
+	background-color: #fff;
+	color: #d85200;
+}
+
+.fancyme-alphabet.orange #tabnav li.current a{
+	background-color: #fff;
+	color: #d85200;
+	border-bottom: 1px solid white;
+}
+
+.fancyme-alphabet.orange #tabcontainer{
+	border: 1px solid #d85200;
+	border-top : 0;
+}
+
+/*Pink Theme Styling*/
+.fancyme-alphabet.pink #tabnav{
+    border-bottom: 1px solid #9d4978;
+}
+
+.fancyme-alphabet.pink #tabnav li a{
+	background-color: #9d4978;	
+	color: #ccc;
+	border: 1px solid #9d4978;	
+	border-bottom: 0;
+}
+
+.fancyme-alphabet.pink #tabnav li a:hover{
+	background-color: #fff;
+	color: #9d4978;
+}
+
+.fancyme-alphabet.pink #tabnav li.current a{
+	background-color: #fff;
+	color: #9d4978;
+	border-bottom: 1px solid white;
+}
+
+.fancyme-alphabet.pink #tabcontainer{
+	border: 1px solid #9d4978;
+	border-top : 0;
+}
+
+
+/*Purple Theme Styling*/
+.fancyme-alphabet.purple #tabnav{
+    border-bottom: 1px solid #7a52b1;
+}
+
+.fancyme-alphabet.purple #tabnav li a{
+	background-color: #7a52b1;	
+	color: #bbb;
+	border: 1px solid #7a52b1;	
+	border-bottom: 0;
+}
+
+.fancyme-alphabet.purple #tabnav li a:hover{
+	background-color: #fff;
+	color: #7a52b1;
+}
+
+.fancyme-alphabet.purple #tabnav li.current a{
+	background-color: #fff;
+	color: #7a52b1;
+	border-bottom: 1px solid white;
+}
+
+.fancyme-alphabet.purple #tabcontainer{
+	border: 1px solid #7a52b1;
+	border-top : 0;
+}
+
+/*Black Theme Styling*/
+.fancyme-alphabet.black #tabnav{
+    border-bottom: 1px solid #000;
+}
+
+.fancyme-alphabet.black #tabnav li a{
+	background-color: #000;	
+	color: #bbb;
+	border: 1px solid #000;	
+	border-bottom: 0;
+}
+
+.fancyme-alphabet.black #tabnav li a:hover{
+	background-color: #fff;
+	color: #000;
+}
+
+.fancyme-alphabet.black #tabnav li.current a{
+	background-color: #fff;
+	color: #000;
+	border-bottom: 1px solid white;
+}
+
+.fancyme-alphabet.black #tabcontainer{
+	border: 1px solid #000;
+	border-top : 0;
+}
